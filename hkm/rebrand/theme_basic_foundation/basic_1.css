@@ -1,0 +1,58 @@
+.ure-sidebar {
+    display: none;
+}
+.users_page_user-role-editor .has-sidebar-content > div {
+    clear: none !important;
+    width: auto !important;
+}
+/* the lower this is, the fancier it gets */
+/*
+ body {
+ perspective: 150px;
+ }*/
+#wpwrap {
+    z-index: 1;
+}
+#wrapemitter {
+    perspective: 110px;
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    background: rgb(69,72,77);
+    background: -moz-linear-gradient(top,  rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(69,72,77,1)), color-stop(100%,rgba(0,0,0,1)));
+    background: -webkit-linear-gradient(top,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+    background: -o-linear-gradient(top,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );
+}
+#emitter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-style: preserve-3d;
+    animation: rotate 4s infinite linear;
+}
+
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 20%;
+    transition: 1s ease-in;
+}
+
+@keyframes rotate {
+0% {
+transform: rotateY(0) rotateZ(-180deg);
+}
+100% {
+transform: rotateY(360deg) rotateZ(180deg);
+}
+}

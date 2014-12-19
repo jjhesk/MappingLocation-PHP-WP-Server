@@ -1,0 +1,255 @@
+/* Images */
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subpage {
+    font-size: 14px;
+    font-size: 1rem;
+    font-family: Helvetica, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+.subpage {
+    padding: 0cm;
+    height: 237mm;
+    /*outline: 2cm #FFEAEA solid;*/
+    font-size: 5.1mm;
+}
+
+.subpage.coverpage {
+    border: 1px red solid;
+}
+
+.subpage footer,
+.subpage header {
+    display: table;
+    width: 100%;
+    clear: both;
+    font-size: 4mm;
+    position: relative;
+}
+
+.subpage header {
+    border-bottom: 1px solid black;
+}
+
+.subpage footer {
+    border-top: 1px solid black;
+}
+
+.subpage section.printable {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.subpage section.printable h2 {
+    display: table;
+}
+
+.subpage section.printable .standardpadding {
+    margin-top: 5mm;
+    margin-bottom: 5mm;
+}
+
+.subpage section.printable p {
+    margin-bottom: 4mm;
+    line-height: 5.05mm;
+    font-size: 4mm;
+    text-align: justify;
+}
+
+.bottomstick {
+    position: relative;
+    bottom: 0;
+}
+
+.signbox {
+    max-width: 400px;
+}
+
+.signbox img {
+    width: 100%;
+    min-height: 100px;
+}
+
+.signbox .sign-name {
+    border-top: 1px solid black;
+}
+
+table.full-width {
+    width: 100%;
+}
+
+table.signaturebox th {
+    text-align: left;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.bottomstick {
+    width: 100%;
+    /* height: 100%; */
+    position: absolute;
+    bottom: 0px;
+}
+
+.subpage section.printable .clear {
+    display: table;
+    clear: both;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.page {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 2cm;
+    margin: 1cm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.subpage.visible {
+    border: 5px red solid;
+    outline: 2cm #FFEAEA solid;
+}
+
+.subpage {
+    padding: 0cm;
+    border: 5px white solid;
+    height: 237mm;
+    outline: 2cm white solid;
+}
+
+.left {
+    float: left;
+    width: 33%;
+    text-align: left;
+}
+
+.central {
+    float: left;
+    width: 33%;
+    text-align: center;
+
+}
+
+.right {
+    float: left;
+    width: 33%;
+    text-align: right;
+}
+
+.cover_background {
+    position: absolute;
+    height: inherit;
+}
+
+.cover_background img {
+    width: 100%;
+    height: 100%;
+}
+
+.cover_info_box {
+    width: 500px;
+    height: 288px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    z-index: 99;
+    display: block;
+    position: absolute;
+    top: 280px;
+    left: 160px;
+}
+
+.cover_info_box > p,
+.cover_info_box > span {
+    text-align: center;
+    clear: both;
+    display: block;
+}
+
+@page {
+    size: A4 portrait;
+    margin: 0;
+}
+
+@media print {
+    .full-width {
+        width: 100%;
+    }
+
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}
+
+/**
+page layout for each page
+**/
+
+.photositelayout {
+    width: 100%;
+    display: block;
+}
+
+.photositelayout tr td {
+    width: 50%;
+    height: 300px;
+}
+
+.photositelayout tr td .photo {
+    width: 100%;
+    display: block;
+}
+
+.photositelayout tr td .photo img {
+    width: 100%;
+    height: auto;
+}
+
+.photositelayout tr td span.caption {
+    width: 100%;
+    height: 50px;
+    background-color: #F0F0F0;
+    display: inline-flex;
+}
+
+.notesize {
+    font-size: 10px;
+}
+
+.measurement_r {
+    font-size: 15px;
+}
+
+.record_table, .record_table td, .record_table th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.notesize td {
+    border: none;
+}

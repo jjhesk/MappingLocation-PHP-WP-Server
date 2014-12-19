@@ -1,0 +1,227 @@
+.accordion, .accordion ul, .accordion li, .accordion a, .accordion span {
+	border:medium none;
+	margin:0;
+	outline:medium none;
+	padding:0;
+}
+.accordion li {
+	list-style:none outside none;
+}
+.accordion li> a {
+	background:rgb(108,110,116);
+	background:-moz-linear-gradient(top,  rgba(108,110,116,1) 0%, rgba(75,77,81,1) 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(108,110,116,1)), color-stop(100%,rgba(75,77,81,1)));
+	background:-webkit-linear-gradient(top,  rgba(108,110,116,1) 0%,rgba(75,77,81,1) 100%);
+	background:-o-linear-gradient(top,  rgba(108,110,116,1) 0%,rgba(75,77,81,1) 100%);
+	background:-ms-linear-gradient(top,  rgba(108,110,116,1) 0%,rgba(75,77,81,1) 100%);
+	background:linear-gradient(to bottom,  rgba(108,110,116,1) 0%,rgba(75,77,81,1) 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c6e74', endColorstr='#4b4d51',GradientType=0 );
+	box-shadow:0 1px 0 0 rgba(255, 255, 255, 0.1) inset,0 1px 0 0 rgba(0, 0, 0, 0.1);
+	color:#FDFDFD;
+	display:block;
+	font:bold 12px/32px Arial,sans-serif;
+	height:32px;
+	min-width:110px;
+	padding:0 10px 0 40px;
+	position:relative;
+	text-decoration:none;
+	text-shadow:0 1px 0 rgba(0, 0, 0, 0.35);
+}
+.accordion> li:hover> a, .accordion> li:target> a {
+	background:rgb(146,38,204);
+	background:-moz-linear-gradient(top,  rgba(146,38,204,1) 0%, rgba(64,11,96,1) 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(146,38,204,1)), color-stop(100%,rgba(64,11,96,1)));
+	background:-webkit-linear-gradient(top,  rgba(146,38,204,1) 0%,rgba(64,11,96,1) 100%);
+	background:-o-linear-gradient(top,  rgba(146,38,204,1) 0%,rgba(64,11,96,1) 100%);
+	background:-ms-linear-gradient(top,  rgba(146,38,204,1) 0%,rgba(64,11,96,1) 100%);
+	background:linear-gradient(to bottom,  rgba(146,38,204,1) 0%,rgba(64,11,96,1) 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#9226cc', endColorstr='#400b60',GradientType=0 );
+	color:#fcecfc;
+	text-shadow:1px 1px 1px rgba(255, 255, 255, 0.2);
+}
+.accordion li> a span {
+	background:none repeat scroll 0 0 #404247;
+	border-radius:15px 15px 15px 15px;
+	box-shadow:1px 1px 1px rgba(0, 0, 0, 0.2) inset,1px 1px 1px rgba(255, 255, 255, 0.1);
+	display:block;
+	font:bold 12px/18px Arial,sans-serif;
+	margin-right:10px;
+	padding:0 10px;
+	position:absolute;
+	right:0;
+	top:7px;
+}
+.accordion> li:hover> a span, .accordion> li:target> a span {
+	background:none repeat scroll 0 0 #3E5706;
+	color:#FDFDFD;
+	text-shadow:0 1px 0 rgba(0, 0, 0, 0.35);
+}
+.accordion> li> a:before {
+	background-image:url("../img/icons.png");
+	background-position:0 0;
+	background-repeat:no-repeat;
+	content:"";
+	height:24px;
+	left:0;
+	margin:4px 8px;
+	position:absolute;
+	top:0;
+	width:24px;
+}
+.accordion li.files> a:before {
+	background-position:0 0;
+}
+.accordion li.files:hover> a:before, .accordion li.files:target> a:before {
+	background-position:0 -24px;
+}
+.accordion li.mail> a:before {
+	background-position:-24px 0;
+}
+.accordion li.mail:hover> a:before, .accordion li.mail:target> a:before {
+	background-position:-24px -24px;
+}
+.accordion li.cloud> a:before {
+	background-position:-48px 0;
+}
+.accordion li.cloud:hover> a:before, .accordion li.cloud:target> a:before {
+	background-position:-48px -24px;
+}
+.accordion li.sign> a:before {
+	background-position:-72px 0;
+}
+.accordion li.sign:hover> a:before, .accordion li.sign:target> a:before {
+	background-position:-72px -24px;
+}
+.sub-menu li a {
+	background:none repeat scroll 0 0 #E5E5E5;
+	border-bottom:1px solid #C9C9C9;
+	box-shadow:0 1px 0 0 rgba(255, 255, 255, 0.1) inset,0 1px 0 0 rgba(0, 0, 0, 0.1);
+	color:#797979;
+	text-shadow:1px 1px 0 rgba(255, 255, 255, 0.2);
+}
+.sub-menu li:hover a {
+	background:none repeat scroll 0 0 #EFEFEF;
+}
+.sub-menu li:last-child a {
+	border:medium none;
+}
+.sub-menu li> a span {
+	background:none repeat scroll 0 0 transparent;
+	border:1px solid #C9C9C9;
+	box-shadow:none;
+	color:#797979;
+	text-shadow:1px 1px 0 rgba(255, 255, 255, 0.2);
+}
+.sub-menu em {
+	color:#A6A6A6;
+	font:10px/32px Arial,sans-serif;
+	left:0;
+	margin-left:14px;
+	position:absolute;
+	top:0;
+}
+.accordion li> .sub-menu {
+	height:0;
+	overflow:hidden;
+	transition:height 0.2s ease-in-out 0s;
+}
+.accordion li:target> .sub-menu {
+	height:98px;
+}
+/**
+ * CSS themes for simplePagination.js
+ * Author: Flavius Matis - http://flaviusmatis.github.com/
+ * URL: https://github.com/flaviusmatis/simplePagination.js
+ */
+/*------------------------------------*\
+ Compact Theme Styles
+ \*------------------------------------*/
+/*
+ .compact-theme {
+ display: block;
+ overflow: hidden;
+ padding: 0 5px 5px 0;
+ }
+ .compact-theme a, .compact-theme span {
+ float: left;
+ color: #333;
+ font-size: 14px;
+ line-height: 24px;
+ font-weight: normal;
+ text-align: center;
+ border: 1px solid #AAA;
+ border-right: none;
+ min-width: 14px;
+ padding: 0 7px;
+ box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+ background: #efefef;
+ background: -moz-linear-gradient(top, #ffffff 0%, #efefef 100%);
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#efefef));
+ background: -webkit-linear-gradient(top, #ffffff 0%,#efefef 100%);
+ background: -o-linear-gradient(top, #ffffff 0%,#efefef 100%);
+ background: -ms-linear-gradient(top, #ffffff 0%,#efefef 100%);
+ background: linear-gradient(top, #ffffff 0%,#efefef 100%);
+ }
+ .compact-theme a:hover {
+ text-decoration: none;
+ background: #efefef;
+ background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(100%,#bbbbbb));
+ background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%);
+ background: -o-linear-gradient(top, #efefef 0%,#bbbbbb 100%);
+ background: -ms-linear-gradient(top, #efefef 0%,#bbbbbb 100%);
+ background: linear-gradient(top, #efefef 0%,#bbbbbb 100%);
+ }
+ .compact-theme .prev {
+ border-radius: 3px 0 0 3px;
+ }
+ .compact-theme .next {
+ border-right: 1px solid #AAA;
+ border-radius: 0 3px 3px 0;
+ }
+ .compact-theme .current {
+ background: #bbbbbb;
+ background: -moz-linear-gradient(top, #bbbbbb 0%, #efefef 100%);
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bbbbbb), color-stop(100%,#efefef));
+ background: -webkit-linear-gradient(top, #bbbbbb 0%,#efefef 100%);
+ background: -o-linear-gradient(top, #bbbbbb 0%,#efefef 100%);
+ background: -ms-linear-gradient(top, #bbbbbb 0%,#efefef 100%);
+ background: linear-gradient(top, #bbbbbb 0%,#efefef 100%);
+ cursor: default;
+ }
+ .compact-theme .ellipse {
+ background: #EAEAEA;
+ padding: 0 10px;
+ cursor: default;
+ }
+ */
+/*a part of bootstrap styling*/
+.dropdown-menu li {
+	list-style:none;
+	margin:0px;
+}
+.dropdown-menu li:hover {
+	background-image:-webkit-linear-gradient(top, #e78b24, #da7e18);
+}
+.indexrow>td,
+.indexrow {
+	background:linear-gradient(to bottom, rgba(146,38,204,1) 0%,rgba(64,11,96,1) 100%);
+	text-shadow:1px 1px 1px rgba(255, 255, 255, 0.2);
+	color:#fcecfc;
+}
+.indexrow>td,
+.indexrow> div {
+	padding:10px 15px 10px;
+}
+.carousel-indicators {
+	background:rgba(0, 0, 0, 0.42);
+	padding:3px;
+	border-radius:10px;
+	
+}
+.carousel-indicators li{
+    margin-right:5px;
+}
+.carousel-control {
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
